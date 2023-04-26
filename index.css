@@ -8,12 +8,16 @@ body {
 nav {
   position: fixed;
   z-index: 1;
-  /* background-image: url(black.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #262626;
   height: 55px;
   width: 100%;
+  top: 0;
+}
+nav .logo{
+width: 50px;
+display: none;
 }
 
 nav .topnav {
@@ -86,8 +90,9 @@ nav .topnav li a:hover:before {
 }
 
 .wrapper {
-  background-image: url(/img/copper.jpg);
-  height: 560px;
+  /* background-image: url(/img/copper.jpg); */
+  background-image: conic-gradient( gold, green, blue, black);
+  height: 700px;
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.80;
@@ -119,7 +124,7 @@ nav .topnav li a:hover:before {
 
 .banner h4 {
   color: #fff;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
   font-style: oblique;
 }
@@ -135,8 +140,8 @@ input {
 
 .btn-shop {
   align-self: center;
-  margin-top: 30px;
-  padding: 10px;
+  margin-top: 150px;
+  padding: 20px 60px;
   font-size: 20px;
   background-color: #f00;
   color: #fff;
@@ -408,7 +413,13 @@ footer h2 span {
 
   .nav-h1 {
     float: left;
+    display: none;
 
+  }
+  nav .logo{
+    display: block;
+    float: left;
+    margin-left: 10px;
   }
 
   .banner h2 {
@@ -417,6 +428,9 @@ footer h2 span {
     font-weight: 900;
     font-family: 'Poppins', sans-serif;
 
+  }
+  .banner h4 {
+    text-align: left;
   }
 
   .wrapper {
@@ -427,6 +441,9 @@ footer h2 span {
     opacity: 0.80;
     position: relative;
     width: 100%;
+  }
+  .btn-shop{
+    margin-top: 10px;
   }
   
   .search {
