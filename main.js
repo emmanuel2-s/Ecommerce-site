@@ -38,4 +38,22 @@ function sendMail(e) {
     // })
     // .catch((err) => console.log(err));
 }
+const hiddenElements= document.querySelectorAll('.hidden');
 
+const appearOptions = {
+  threshold:0,
+  rootMargin: '0px 0px -200px 0px'
+};
+
+const appearOnscroll = new IntersectionObserver((entries,appearOnscroll) =>{
+  entries.forEach(entry =>{
+    if(!entry.isIntersecting){
+    return;  
+    }else{
+      entry.target.classList.add('show');
+      appearOnscroll.unobserve(entry.target);
+    }
+  });
+}, appearOptions);
+
+hiddenElements.forEach((el) => appearOnscroll.observe(el));

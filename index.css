@@ -7,6 +7,7 @@ body {
 
 nav {
   position: fixed;
+  background-image: conic-gradient( green, blue);
   z-index: 1;
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,8 +57,7 @@ nav .icon {
 }
 
 .topnav .active a {
-  background-color: #f00;
-  padding: 3px;
+  color: #f00;
 }
 
 
@@ -90,7 +90,6 @@ nav .topnav li a:hover:before {
 }
 
 .wrapper {
-  /* background-image: url(/img/copper.jpg); */
   background-image: conic-gradient( gold, green, blue, black);
   height: 700px;
   background-size: cover;
@@ -112,7 +111,7 @@ nav .topnav li a:hover:before {
   color: #fff;
   letter-spacing: 10px;
   margin-bottom: 0px;
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 900;
   font-family: 'Poppins', sans-serif;
 
@@ -146,8 +145,21 @@ input {
   background-color: #f00;
   color: #fff;
   border-radius: 5px;
+  text-decoration: none;
 }
 
+.hidden{
+  /* opacity: 0; */
+  /* filter: blur(5px);
+  transform: translateX(-40px);
+  transition: all 5s; */
+}
+.show{
+  opacity: 1;
+  /* filter: blur(0);
+  transform: translateX(0); */
+
+}
 
 .service {
   position: relative;
@@ -211,16 +223,21 @@ input {
 .products-img {
   display: flex;
   justify-content: center;
+  /* transform: translateX(100%); */
+}
 
+.products-img{
+  transition: transform 400ms ease-in;
+}
+.products-img .show{
+  transform: translateX(0);
 }
 
 .card {
-  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
   margin: 10px;
   padding: 5px;
 
 }
-
 
 .products-img p {
   text-align: center;
@@ -231,13 +248,11 @@ input {
 .card img {
   height: 234px;
   width: 234px;
-  transition: width 2s, height 2s, transform 2s;
 }
 
-.card img:hover {
-  width: 280px;
-  height: 280px;
-  transform: scaleX(360deg);
+.column:hover {
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2),0px 0px 30px 0px rgba(0, 0, 1, 0.2) ;
 }
 
 .animate {
@@ -357,6 +372,13 @@ footer h2 span {
   /* color: #f00; */
   padding-left: 20px;
   font-size: 20px;
+}
+
+@media (prefers-reduced-motion) 
+ {
+  .hidden{
+    transition: none;
+  }
 }
 
 

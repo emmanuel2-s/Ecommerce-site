@@ -53,7 +53,7 @@ nav .icon {
 }
 
 .topnav .active a {
-  background-color: #f00;
+  color: #f00;
   padding: 3px;
 }
 

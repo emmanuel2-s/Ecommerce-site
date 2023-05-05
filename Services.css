@@ -53,7 +53,7 @@ nav .icon {
 }
 
 .topnav .active a {
-  background-color: #f00;
+  color: #f00;
   padding: 3px;
 }
 
@@ -335,7 +335,7 @@ footer h2 span {
 
   .card1 {
     margin: 5px;
-    height: 200px;
+    padding-bottom: 10px;
     width: 100%;
     box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
   }
@@ -363,7 +363,6 @@ footer h2 span {
   .card1 p {
     padding-left: 5px;
     font-size: 18px;
-    line-height: 25px;
   }
 
   .product {
