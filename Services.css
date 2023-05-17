@@ -329,8 +329,11 @@ footer h2 span {
 
   .column {
     display: block;
-    margin-left: 10px;
+    /* margin-left: 10px; */
 
+  }
+  .offer{
+    width: 95%;
   }
 
   .card1 {
@@ -362,7 +365,7 @@ footer h2 span {
 
   .card1 p {
     padding-left: 5px;
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .product {
@@ -386,13 +389,16 @@ footer h2 span {
 
   .product h3 {
     padding-left: 28px;
-    font-size: 25px;
+    font-size: 20px;
     text-transform: uppercase;
   }
 
   .card {
     box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
     margin: 10px;
+  }
+  .card p{
+    font-size: 17px;
   }
 
   .products-img p {

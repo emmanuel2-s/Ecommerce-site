@@ -7,7 +7,7 @@ body {
 
 nav {
   position: fixed;
-  background-image: conic-gradient( green, blue);
+  /* background-image: conic-gradient( green, blue); */
   z-index: 1;
   background-repeat: no-repeat;
   background-size: cover;
@@ -90,8 +90,9 @@ nav .topnav li a:hover:before {
 }
 
 .wrapper {
-  background-image: conic-gradient( gold, green, blue, black);
+  /* background-image: conic-gradient( gold, green, blue, black); */
   height: 700px;
+  background-image:radial-gradient(rgba(0,0,0,.4), rgba(0,0,0,.8)), url(/img/copper.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.80;
@@ -148,18 +149,6 @@ input {
   text-decoration: none;
 }
 
-.hidden{
-  /* opacity: 0; */
-  /* filter: blur(5px);
-  transform: translateX(-40px);
-  transition: all 5s; */
-}
-.show{
-  opacity: 1;
-  /* filter: blur(0);
-  transform: translateX(0); */
-
-}
 
 .service {
   position: relative;
@@ -431,6 +420,7 @@ footer h2 span {
     height: 50px !important;
     width: 100%;
     position: fixed;
+    background-color: #262626;
   }
 
   .nav-h1 {
