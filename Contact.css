@@ -99,7 +99,6 @@ nav .topnav li a:hover:before {
   margin-top: 55px;
   color: #fff;
   font-weight: bold;
-  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -322,7 +321,6 @@ footer h2 span {
     margin-top: 48px;
     color: #fff;
     font-weight: bold;
-    margin-bottom: 10px;
     width: 100%;
 
   }
@@ -331,10 +329,11 @@ footer h2 span {
     padding-left: 5px;
     line-height: 20px;
     padding-right: 5px;
+    padding-bottom: 10px;
   }
 
   .map {
-    text-align: left;
+    margin-top: 15px;
   }
 
   iframe {
