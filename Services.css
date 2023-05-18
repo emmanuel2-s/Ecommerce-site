@@ -379,9 +379,9 @@ footer h2 span {
   }
 
   .card1 {
-    margin: 5px;
+    margin: 2px;
     padding-bottom: 10px;
-    width: 100%;
+    width: 97%;
     box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
   }
 
@@ -395,21 +395,21 @@ footer h2 span {
     justify-content: center;
     align-items: center;
     padding-right: 8px;
-    font-size: 22px;
     font-weight: bold;
   }
 
-  .card1 h5, .h {
-    font-size: 25px;
+  .card1 .h {
+    font-size: 20px;
     color: blue;
     /* padding-top: 0px; */
   }
   .card1 h5{
-    padding-top: 0px;
+    padding-top: 3px;
+    font-size: 18px;
 
   }
   .card1 p {
-    padding-left: 5px;
+    padding-left: 10px;
     font-size: 17px;
     line-height: 20px;
   }
@@ -430,7 +430,6 @@ footer h2 span {
 
   .products-img {
     display: block;
-
   }
 
   .product h3 {

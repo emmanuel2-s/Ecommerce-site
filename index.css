@@ -370,6 +370,64 @@ footer h2 span {
   }
 }
 
+@media (max-width: 1270px) {
+
+  .products-img{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.products-img img{
+  width: 100%;
+    }  
+
+
+}
+
+@media (max-width: 1024px) {
+  .column{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .column:hover {
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2),0px 0px 30px 0px rgba(0, 0, 1, 0.2) ;
+  }
+  
+  .products-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.products-img img{
+  width: 100%;
+    }  
+    .product h2 {
+      width: 40%;
+    }
+    
+
+  }
+  @media (max-width:700px) {
+    .column{
+      display: block;
+    }
+    .column:hover {
+      border-radius: 10px;
+      width: 100%;
+      box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2),0px 0px 30px 0px rgba(0, 0, 1, 0.2) ;
+    }
+    .products-img{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+      margin: 0;
+  }
+    
+    
+  }
 
 @media screen and (max-width: 500px) {
 
@@ -443,6 +501,7 @@ footer h2 span {
   }
   .banner h4 {
     text-align: left;
+    padding-left: 8px;
   }
 
   .wrapper {
@@ -493,6 +552,7 @@ footer h2 span {
 
   .card img {
     transition: none;
+    width: 100%;
   }
   
   .card img:hover {
