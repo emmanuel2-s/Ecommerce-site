@@ -100,10 +100,12 @@ nav .topnav li a:hover:before {
   color: #fff;
   font-weight: bold;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .map {
   text-align: center;
+
 }
 
 
