@@ -292,6 +292,20 @@ footer h2 span {
   width: 100%;
     }  
 
+    .add-btn{
+      padding: 6px 25px;
+     position: relative;
+     margin-left:100px ;
+     margin-bottom: 10px;
+     color: #fff;
+     background-color: #000;
+     border: none;
+     outline: none;
+     border-radius: 5px;
+     width: 50%;
+    }
+  
+
 
 }
 
@@ -305,6 +319,10 @@ footer h2 span {
 .products-img img{
   width: 100%;
     }  
+.column{
+  width: 90%;
+}
+  
 
   }
 
@@ -394,6 +412,7 @@ footer h2 span {
 .column{
   display: block;
   margin-left: 3px;
+  width: 100%;
 }
 
   .offer{
