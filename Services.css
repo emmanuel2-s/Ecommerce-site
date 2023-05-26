@@ -106,7 +106,7 @@ nav .topnav li a:hover:before {
   padding-right: 8px;
 }
 
-.column {
+.column-card {
   display: flex;
   margin-left: 10px;
 }
@@ -167,6 +167,11 @@ nav .topnav li a:hover:before {
 .card {
   box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
   margin: 10px;
+
+}
+.column:hover {
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2),0px 0px 30px 0px rgba(0, 0, 1, 0.2) ;
 }
 
 .products-img p {
@@ -179,6 +184,21 @@ nav .topnav li a:hover:before {
   /* flex-wrap: wrap; */
 }
 
+.add-btn{
+  padding: 6px 20px;
+ position: relative;
+ margin-left:60px ;
+ margin-bottom: 10px;
+ color: #fff;
+ background-color: #000;
+ border: none;
+ outline: none;
+ border-radius: 5px;
+}
+
+.add-btn:hover{
+  background-color: #ccc;
+}
 
 .ft-wrapper {
   display: flex;
@@ -266,7 +286,7 @@ footer h2 span {
 
   .products-img{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 .products-img img{
   width: 100%;
@@ -276,10 +296,6 @@ footer h2 span {
 }
 
 @media (max-width: 1024px) {
-  .column{
-    display: flex;
-    flex-wrap: nowrap;
-  }
 
   .products-img{
     display: grid;
@@ -294,15 +310,16 @@ footer h2 span {
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .column{
-    display: flex;
+    display: grid;
+    flex-wrap: wrap;
     flex: 50%;
   }
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
   .topnav {
     display: none;
@@ -369,11 +386,16 @@ footer h2 span {
     text-transform: capitalize;
   }
 
-  .column {
+  .column-card {
     display: block;
     margin-left: 3px;
 
   }
+.column{
+  display: block;
+  margin-left: 3px;
+}
+
   .offer{
     width: 100%;
   }
@@ -437,6 +459,23 @@ footer h2 span {
     font-size: 20px;
     text-transform: uppercase;
   }
+  .add-btn{
+    padding: 6px 25px;
+   position: relative;
+   margin-left:0px ;
+   margin-bottom: 0px;
+   color: #fff;
+   background-color: #000;
+   border: none;
+   outline: none;
+   border-radius: 5px;
+   width: 100%;
+  }
+  
+  .add-btn:hover{
+    background-color: #ccc;
+  }
+  
 
   .card {
     box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
