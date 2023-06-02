@@ -23,6 +23,11 @@ nav .topnav {
   margin-right: 25px;
 }
 
+nav .logo{
+  width: 50px;
+  display: none;
+}
+
 .clearfix::after {
   content: "";
   display: table;
@@ -56,11 +61,6 @@ nav .icon {
   color: #f00;
   padding: 3px;
 }
-
-/* .topnav li a:hover {
-  border-bottom: 2px solid #fff;
-  color: #f00;
-} */
 
 nav .nav-h1 {
   float: left;
@@ -166,11 +166,12 @@ nav .topnav li a:hover:before {
 }
 
 .card {
-  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2); */
   margin: 10px;
 
 }
 .column:hover {
+  transform: translateY(-7px);
   border-radius: 10px;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2),0px 0px 30px 0px rgba(0, 0, 1, 0.2) ;
 }
@@ -203,6 +204,8 @@ nav .topnav li a:hover:before {
 .add-btn:hover{
   background-color: #ccc;
 }
+
+/* FOOTER START */
 
 .ft-wrapper {
   display: flex;
@@ -282,6 +285,8 @@ footer h2 span {
   padding-left: 20px;
   font-size: 20px;
 }
+
+/* FOOTER END */
 
 /* MEDIA QUERIES */
 
@@ -382,6 +387,12 @@ footer h2 span {
     line-height: 50px;
   }
 
+  nav .logo{
+    display: block;
+    float: left;
+    margin-left: 10px;
+  }
+
 
   nav .icon {
     float: right;
@@ -409,8 +420,7 @@ footer h2 span {
   }
 
   .nav-h1 {
-    float: left;
-
+    display: none;
   }
 
   .clearfix::after {

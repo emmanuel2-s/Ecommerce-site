@@ -8,7 +8,7 @@ body {
 nav {
   position: fixed;
   z-index: 1;
-  /* background-image: url(black.jpg); */
+  background-image: url(black.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #262626;
@@ -35,6 +35,11 @@ nav .topnav {
   font-size: 17px;
   line-height: 50px;
   padding-bottom: 4px;
+}
+
+nav .logo{
+  width: 50px;
+  display: none;
 }
 
 nav .icon {
@@ -279,6 +284,12 @@ footer h2 span {
     line-height: 80px;
   }
 
+  nav .logo{
+    display: block;
+    float: left;
+    margin-left: 10px;
+  }
+
 
   nav .icon {
     float: right;
@@ -300,14 +311,13 @@ footer h2 span {
   }
 
   nav {
-    height: 50px;
+    height: 60px;
     width: 100%;
     position: fixed;
   }
 
-  .nav-h1 {
-    float: left;
-
+  nav .nav-h1 {
+    display: none;
   }
 
   .clearfix::after {
