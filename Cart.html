@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="dscription" content="Ecommerce- website">
+    <title>Mara-Store</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> -->
+    <script src="https://kit.fontawesome.com/dc806f51b9.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-head">
+            <nav>
+                <img class="logo clearfix" src="img/Logo.jpg" alt="logo">
+                <h1 class="nav-h1 clearfix">mara</h1>
+
+                <span class="icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+                <ul class="topnav" id="myTopnav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="AboutPage.html">About</a></li>
+
+                    <li><a href="Services.html">Services</a></li>
+
+                    <li><a href="Contact.html">Contact</a></li>
+
+                    <li class="active"><a href="Cart.html">Cart</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="cart-table">
+        <table>
+            <tr>
+                <th>Products</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/cloths/AstarYa Shorts Set Tracksuit For Men - White _ XL.jpg" alt="">
+                        <div>
+                            <p>AstarYa Shorts Set Tracksuit For Men</p>
+                            <small>$50.00</small>
+                            <br/>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/cloths/New Solid Color Black White Patchwork Sweatshirt Men Hoodies Spring Autumn Hoody Casual Streetwear Clothes - Y6177 d, M FOR 160 CM 60KG.jpg" alt="">
+                        <div>
+                            <p>AstarYa Shorts Set Tracksuit For Men</p>
+                            <small>$50.00</small>
+                            <br/>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/sneakers/Custom Sneakers AF1 drip.jpg" alt="">
+                        <div>
+                            <p>AstarYa Shorts Set Tracksuit For Men</p>
+                            <small>$50.00</small>
+                            <br/>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td class="price">$50.00</td>
+            </tr>
+
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$200.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>$20.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$220.00</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="purchase-btn">
+            <button type="submit">Purchase</button>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- FOOTER START -->
+
+    <footer>
+        <div class="ft-wrapper ">
+            <div class="ft-hd col">
+                <h2>Mara-<span>Store Enterprise</span> </h2>
+                <h4><a href="#">Location <i class="fa-solid fa-location-dot"></i></a></h4>
+                <h3><i class="fa-solid fa-envelope"></i> E-mail: example@gmail.com</h3>
+                <h3><i class="fa-solid fa-location-dot"></i> Address: No 306b fola ogunlana ipaja Lagos </h3>
+            </div>
+            <div class=" col">
+                <ul class="links">
+                    <a href="index.html">
+                        Home</a>
+                    <a href="AboutPage.html">
+                        About
+                    </a>
+                    <a href="Services.html">
+                        Services
+                    </a>
+                    <a href="Contact.html">
+                        Contact
+                    </a>
+                    <a href="http://www.jumia.com.ng">
+                        Jumia
+                    </a>
+                    <a href="http://www.konga.com">
+                        Konga
+                    </a>
+            </div>
+            <div class="col socials">
+                <a href=""><i class="fa-brands fa-facebook s"></i></i></a>
+                <a href=""><i class="fa-brands fa-instagram s"></i></i></a>
+                <a href=""><i class="fa-brands fa-twitter s"></i></i></a>
+                <a href=""><i class="fa-brands fa-tiktok s"></i></i></a>
+
+            </div>
+            <div class="sponsors">
+                <div class="sp-contain">
+                    <h5>Sponsors</h5>
+                    <i class="fa-brands fa-pinterest w"> Pinterest</i>
+                    <i class="fa-brands fa-wix w"> Wix</i>
+                    <i class="fa-brands fa-salesforce w">Salesforce</i>
+                    <i class="fa-brands fa-shopify w"> Shopify</i>
+                </div>
+            </div>
+            <div class="sponsors-sm">
+                <div class="sp-contain">
+                    <h5>Sponsors</h5>
+                    <i class="fa-brands fa-pinterest w"></i>
+                    <i class="fa-brands fa-wix w"></i>
+                    <i class="fa-brands fa-salesforce w"></i>
+                    <i class="fa-brands fa-shopify w"></i>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+</body>
+
+</html>

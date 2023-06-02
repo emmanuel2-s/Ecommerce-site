@@ -8,7 +8,7 @@ body {
 nav {
   position: fixed;
   z-index: 1;
-  /* background-image: url(black.jpg); */
+  background-image: url(black.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #262626;
@@ -17,6 +17,11 @@ nav {
   top: 0;
 }
 
+nav .logo{
+  width: 50px;
+  display: none;
+  }
+  
 nav .topnav {
   float: right;
   list-style: none;
@@ -107,6 +112,10 @@ nav .topnav li a:hover:before {
   padding: 0 8px;
 }
 
+.column:hover{
+  transform: translateY(-10px);
+}
+
 .row {
   /* margin-top: 20px; */
   padding: 0 80px;
@@ -159,7 +168,7 @@ nav .topnav li a:hover:before {
   background-color: #555;
 }
 
-
+/* FOOTER START */
 
 .ft-wrapper {
   display: flex;
@@ -334,6 +343,12 @@ border-top-width: 100%;
     line-height: 80px;
   }
 
+  nav .logo{
+    display: block;
+    float: left;
+    margin-left: 10px;
+  }
+
 
   nav .icon {
     float: right;
@@ -360,8 +375,7 @@ border-top-width: 100%;
   }
 
   .nav-h1 {
-    float: left;
-
+    display: none;
   }
 
   .clearfix::after {
