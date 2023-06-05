@@ -91,7 +91,7 @@ nav .topnav li a:hover:before {
 
 .wrapper {
   height: 700px;
-  background-image:radial-gradient(rgba(0,0,0,.4), rgba(0,0,0,.8)), url(/img/freestocks-_3Q3tsJ01nc-unsplash.jpg);
+  background-image:radial-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url(/img/freestocks-_3Q3tsJ01nc-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position:center;
@@ -220,7 +220,7 @@ input {
   /* transform: translateX(100%); */
 }
 
-.card {
+.cards {
   margin: 10px;
   padding: 5px;
 
@@ -232,12 +232,12 @@ input {
   font-weight: bold;
 }
 
-.card img {
+.cards img {
   height: 234px;
   width: 234px;
 }
 
-.column:hover {
+.column-sample:hover {
   border-radius: 10px;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2),0px 0px 30px 0px rgba(0, 0, 1, 0.2) ;
 }
@@ -382,11 +382,11 @@ footer h2 span {
 }
 
 @media (max-width: 1024px) {
-  .column{
+  .column-sample{
     display: flex;
     flex-wrap: wrap;
   }
-  .column:hover {
+  .column-sample:hover {
     border-radius: 10px;
     /* width: 80%; */
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2),0px 0px 30px 0px rgba(0, 0, 1, 0.2) ;
@@ -409,10 +409,10 @@ footer h2 span {
 
   }
   @media (max-width:800px) {
-    .column{
+    .column-sample{
       display: block;
     }
-    .column:hover {
+    .column-sample:hover {
       border-radius: 10px;
       width: 100%;
       box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2),0px 0px 30px 0px rgba(0, 0, 1, 0.2) ;
@@ -548,12 +548,12 @@ footer h2 span {
   }
 
 
-  .card img {
+  .cards img {
     transition: none;
     width: 100%;
   }
   
-  .card img:hover {
+  .cards img:hover {
     transform: none;
     width: 100%;  
   }

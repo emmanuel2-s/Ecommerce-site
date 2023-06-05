@@ -98,7 +98,7 @@ table{
     border-collapse: collapse;
 }
 
-.cart-info{
+.cart-container{
     display: flex;
     flex-wrap: wrap;
 }
@@ -116,7 +116,7 @@ td{
     font-weight: 900;
 }
 
-.cart-info p,small{
+.cart-container p,small{
     font-weight: 900;
     font-size: 16px;
 }
@@ -161,7 +161,7 @@ th:last-child{
     justify-content: center;
 }
 
-button{
+.cart-purchaseBtn{
     background-color: teal;
     padding: 15px;
     border-radius: 11px;
@@ -171,8 +171,16 @@ button{
     font-size: 20px;
     margin-top: 20px;
 }
+.cart-btn{
+    background-color: red;
+    border-radius: 4px;
+    padding: 5px;
+    outline: none;
+    color: #fff;
+}
 
-button:hover{
+
+.cart-purchaseBtn:hover{
     background-color: #f00;
 }
 
