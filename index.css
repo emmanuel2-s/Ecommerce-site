@@ -101,7 +101,7 @@ nav .topnav li a:hover:before {
 
 .banner {
   text-align: center;
-  padding-top: 70px;
+  padding-top: 200px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -490,6 +490,9 @@ footer h2 span {
     margin-left: 10px;
   }
 
+  .banner{
+    padding-top: 50px;
+  }
   .banner h2 {
     color: #fff;
     font-size: 40px;
@@ -503,16 +506,18 @@ footer h2 span {
   }
 
   .wrapper {
-    background-image: url(/img/copper.jpg);
+    background-image: url(/img/freestocks-_3Q3tsJ01nc-unsplash.jpg);
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.80;
+    /* opacity: 0.80; */
     position: relative;
     width: 100%;
   }
   .btn-shop{
     margin-top: 10px;
+    background-color: #f00;
+    border: none;
   }
   
   .search {
