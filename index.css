@@ -89,6 +89,30 @@ nav .topnav li a:hover:before {
   transform-origin: left;
 }
 
+.cart-shop{
+  position: relative;
+}
+
+.cart-shop:before{
+position: absolute;
+content:attr(data-count);
+width: 25px;
+height: 25px;
+font-size: 13px;
+line-height: 25px;
+border-radius: 15px;
+top: -9px;
+text-align: center;
+background-color: red;
+color: #fff;
+margin-left: 3px;
+opacity: 0;
+}
+
+.cart-shop.on:before{
+  opacity: 1;
+}
+
 .wrapper {
   height: 700px;
   background-image:radial-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url(/img/freestocks-_3Q3tsJ01nc-unsplash.jpg);

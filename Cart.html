@@ -37,7 +37,7 @@
 
                     <li><a href="Contact.html">Contact</a></li>
 
-                    <li class="active"><a href="Cart.html">Cart</a></li>
+                    <li class="active cart-shop"><a href="Cart.html">Cart</a></li>
 
                 </ul>
             </nav>
@@ -45,84 +45,45 @@
     </header>
 
     <section class="cart-table">
-        <table>
+        <table id="table">
             <tr>
                 <th>Products</th>
                 <th>Quantity</th>
                 <th>Subtotal</th>
             </tr>
             
-            <div class="cart-items">
-                <tr class="container">
+            <tbody class="cart-items">
+                <!-- <tr class="container">
                     <td class="cart-container">
-                        <!-- <div class="cart-container"> -->
-                        <img src="img/cloths/AstarYa Shorts Set Tracksuit For Men - White _ XL.jpg" alt="">
-                        <div class="cart-info">
-                            <p>AstarYa Shorts Set Tracksuit For Men</p>
-                            <small class="price-quantity">$50.00</small>
-                            <br />
-                            <button class="cart-btn" type="button">Remove</button>
+                        <div class="cart-container">
+                            <img src="img/cloths/AstarYa Shorts Set Tracksuit For Men - White _ XL.jpg" alt="">
+                            <div class="cart-info">
+                                <p>AstarYa Shorts Set Tracksuit For Men</p>
+                                <small class="price-quantity">$50.00</small>
+                                <br />
+                                <button class="cart-btn" type="button">Remove</button>
+                            </div>
                         </div>
-                        <!-- </div> -->
                     </td>
                     <td><input type="number" class="add-input" value="2"></td>
-                    <td class="sub-price">$50.00</td>
-                </tr>
-
-                <tr class="container">
-                    <td class="cart-container">
-                        <!-- <div class="cart-container"> -->
-                        <img src="img/cloths/New Solid Color Black White Patchwork Sweatshirt Men Hoodies Spring Autumn Hoody Casual Streetwear Clothes - Y6177 d, M FOR 160 CM 60KG.jpg"
-                            alt="">
-                        <div class="cart-info">
-                            <p>AstarYa Shorts Set Tracksuit For Men</p>
-                            <small class="price-quantity">$50.00</small>
-                            <br />
-                            <button class="cart-btn" type="button">Remove</button>
-                        </div>
-                        <!-- </div> -->
-                    </td>
-                    <td><input type="number" class="add-input" value="1"></td>
-                    <td class="sub-price">$50.00</td>
-                </tr>
-
-                <tr class="container">
-                    <td class="cart-container">
-                        <!-- <div class="cart-container"> -->
-                        <img src="img/sneakers/Custom Sneakers AF1 drip.jpg" alt="">
-                        <div class="cart-info">
-                            <p>AstarYa Shorts Set Tracksuit For Men</p>
-                            <small class="price-quantity">$50.00</small>
-                            <br />
-                            <button class="cart-btn" type="button">Remove</button>
-                        </div>
-                        <!-- </div> -->
-                    </td>
-                    <td><input type="number" class="add-input" value="1"></td>
-                    <td class="sub-price">$50.00</td>
-                </tr>
-            </div>
-
+                    <td class="sub-price"><small>$50.00</small></td>
+                </tr> -->
+                
+            </tbody>
+            
         </table>
-        <div class="total-price">
+        <h3 id="info"></h3>
+        <div id="total" class="total-price">
             <table>
                 <tr>
-                    <td>Subtotal</td>
-                    <td class="sub-total">$200.00</td>
-                </tr>
-                <tr>
-                    <td>Tax</td>
-                    <td>$20.00</td>
-                </tr>
-                <tr>
                     <td>Total</td>
-                    <td class="total">$220.00</td>
+                    <td class="total">$0</td>
                 </tr>
             </table>
         </div>
 
-        <div class="purchase-btn">
-            <button class="cart-purchaseBtn" type="submit">Purchase</button>
+        <div  class="purchase-btn">
+            <button id="purchaseBtn" class="cart-purchaseBtn" type="submit">Purchase</button>
         </div>
     </section>
 
@@ -132,7 +93,7 @@
 
     <!-- FOOTER START -->
 
-    <footer>
+    <!-- <footer>
         <div class="ft-wrapper ">
             <div class="ft-hd col">
                 <h2>Mara-<span>Store Enterprise</span> </h2>
@@ -187,7 +148,7 @@
             </div>
 
         </div>
-    </footer>
+    </footer> -->
     <!-- FOOTER END -->
 
 </body>
