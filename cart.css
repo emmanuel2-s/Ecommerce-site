@@ -61,7 +61,6 @@ nav .icon {
   color: #f00;
 }
 
-
 nav .nav-h1 {
   float: left;
   text-transform: uppercase;
@@ -82,7 +81,7 @@ nav .topnav li a::before {
   background: white;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform .4s linear;
+  transition: transform 0.4s linear;
 }
 
 nav .topnav li a:hover:before {
@@ -171,8 +170,7 @@ td img {
   margin-top: 10px;
 }
 
-
-#info{
+#info {
   display: flex;
   justify-content: center;
   font-size: 30px;
@@ -219,35 +217,31 @@ th:last-child {
   color: #fff;
 }
 
-
 .cart-purchaseBtn:hover {
   background-color: #f00;
 }
 
-
-
 /* FOOTER START */
-footer{
-  position: fixed;
-  width: 100%;
+footer {
+  background-color: #000;
 }
+
 .ft-wrapper {
   display: flex;
-  background: #000;
-  height: 400px;
+  flex-direction: row;
+  align-items: center;
   padding-top: 20px;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 50px;
   position: relative;
-  width: 100%;
 }
-
 
 footer h2 {
   color: #fff;
   letter-spacing: 10px;
   font-size: 35px;
   font-weight: 900;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 footer h2 span {
@@ -261,7 +255,6 @@ footer h2 span {
   font-size: 20px;
   color: #fff;
   text-decoration: none;
-  padding-top: 20px;
 }
 
 .s {
@@ -281,10 +274,6 @@ footer h2 span {
   text-decoration: underline;
 }
 
-.sponsors-sm {
-  display: none;
-}
-
 .ft-hd h3 {
   color: #ccc;
 }
@@ -300,37 +289,29 @@ footer h2 span {
 
 .ft-hd h4 {
   font-size: 18px;
-  text-decoration: none;
 }
 
 .sponsors {
+  text-align: center;
   color: #fff;
-  position: absolute;
-  bottom: 10px;
-}
-
-.sp-contain {
-  border-top: 2px solid #ccc;
-  border-top-width: 100%;
+  padding-bottom: 20px;
 }
 
 .sponsors h5 {
-  text-align: center;
   font-size: 15px;
 }
 
 .w {
+  /* color: #f00; */
   padding-left: 20px;
   font-size: 20px;
 }
 
 /* FOOTER END   */
 
-
 /* MEDIA QUERIES */
 
-@media screen and (max-width:600px) {
-
+@media screen and (max-width: 600px) {
   .topnav {
     display: none;
     height: 100%;
@@ -359,7 +340,6 @@ footer h2 span {
     margin-left: 10px;
   }
 
-
   nav .icon {
     float: right;
     /* margin-right: 50px; */
@@ -379,7 +359,6 @@ footer h2 span {
     text-decoration: none;
   }
 
-
   nav {
     height: 50px !important;
     width: 100%;
@@ -388,7 +367,6 @@ footer h2 span {
 
   .nav-h1 {
     display: none;
-
   }
 
   nav .logo {
@@ -411,8 +389,6 @@ footer h2 span {
     display: none;
   }
 
-
-
   /* FOOTER DETAILS */
 
   .ft-wrapper {
@@ -425,15 +401,13 @@ footer h2 span {
     padding-top: 0px;
   }
 
-
   .ft-hd h2 {
     color: #fff;
     letter-spacing: 10px;
     font-size: 30px;
     font-weight: 900;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     text-align: center;
-
   }
 
   footer h2 span {
@@ -448,7 +422,6 @@ footer h2 span {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
   }
 
   .s {
@@ -486,6 +459,4 @@ footer h2 span {
   .w {
     font-size: 25px;
   }
-
-
 }

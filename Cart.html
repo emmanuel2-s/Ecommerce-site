@@ -37,7 +37,7 @@
 
                     <li><a href="Contact.html">Contact</a></li>
 
-                    <li class="active cart-shop"><a href="Cart.html">Cart</a></li>
+                    <li class="count active cart-shop"><a href="Cart.html">Cart</a></li>
 
                 </ul>
             </nav>
@@ -51,8 +51,8 @@
                 <th>Quantity</th>
                 <th>Subtotal</th>
             </tr>
-            
-            <tbody class="cart-items">
+
+            <tbody id="cart-body" class="cart-items">
                 <!-- <tr class="container">
                     <td class="cart-container">
                         <div class="cart-container">
@@ -68,10 +68,11 @@
                     <td><input type="number" class="add-input" value="2"></td>
                     <td class="sub-price"><small>$50.00</small></td>
                 </tr> -->
-                
+
             </tbody>
-            
+
         </table>
+
         <h3 id="info"></h3>
         <div id="total" class="total-price">
             <table>
@@ -82,54 +83,56 @@
             </table>
         </div>
 
-        <div  class="purchase-btn">
+        <div class="purchase-btn">
             <button id="purchaseBtn" class="cart-purchaseBtn" type="submit">Purchase</button>
         </div>
+
     </section>
-
-
-
-
 
     <!-- FOOTER START -->
 
-    <!-- <footer>
-        <div class="ft-wrapper ">
-            <div class="ft-hd col">
-                <h2>Mara-<span>Store Enterprise</span> </h2>
-                <h4><a href="#">Location <i class="fa-solid fa-location-dot"></i></a></h4>
-                <h3><i class="fa-solid fa-envelope"></i> E-mail: example@gmail.com</h3>
-                <h3><i class="fa-solid fa-location-dot"></i> Address: No 306b fola ogunlana ipaja Lagos </h3>
-            </div>
-            <div class=" col">
-                <ul class="links">
-                    <a href="index.html">
-                        Home</a>
-                    <a href="AboutPage.html">
-                        About
-                    </a>
-                    <a href="Services.html">
-                        Services
-                    </a>
-                    <a href="Contact.html">
-                        Contact
-                    </a>
-                    <a href="http://www.jumia.com.ng">
-                        Jumia
-                    </a>
-                    <a href="http://www.konga.com">
-                        Konga
-                    </a>
-            </div>
-            <div class="col socials">
-                <a href=""><i class="fa-brands fa-facebook s"></i></i></a>
-                <a href=""><i class="fa-brands fa-instagram s"></i></i></a>
-                <a href=""><i class="fa-brands fa-twitter s"></i></i></a>
-                <a href=""><i class="fa-brands fa-tiktok s"></i></i></a>
+        <footer>
+            <div class="ft-wrapper ">
+                <div class="ft-hd">
+                    <h2>Mara-<span>Store Enterprise</span> </h2>
+                    <div class="get-app">
+                        <img src="./img/App Store - eng.png" alt="">
+                        <img src="./img/Google Play - eng.png" alt="">
+                    </div>
+                    <h4><a href="#">Location <i class="fa-solid fa-location-dot"></i></a></h4>
+                    <h3><i class="fa-solid fa-envelope"></i> E-mail: example@gmail.com</h3>
+                    <h3><i class="fa-solid fa-location-dot"></i> Address: No 306b abesan estate ipaja Lagos </h3>
+                </div>
+                <div class="">
+                    <ul class="links">
+                        <a href="index.html">
+                            Home</a>
+                        <a href="AboutPage.html">
+                            About
+                        </a>
+                        <a href="Services.html">
+                            Services
+                        </a>
+                        <a href="Contact.html">
+                            Contact
+                        </a>
+                        <a href="http://www.jumia.com.ng">
+                            Jumia
+                        </a>
+                        <a href="http://www.konga.com">
+                            Konga
+                        </a>
+                </div>
+                <div class="col">
+                    <a href=""><i class="fa-brands fa-facebook s"></i></i></a>
+                    <a href=""><i class="fa-brands fa-instagram s"></i></i></a>
+                    <a href=""><i class="fa-brands fa-twitter s"></i></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok s"></i></i></a>
 
+                </div>
             </div>
             <div class="sponsors">
-                <div class="sp-contain">
+                <div>
                     <h5>Sponsors</h5>
                     <i class="fa-brands fa-pinterest w"> Pinterest</i>
                     <i class="fa-brands fa-wix w"> Wix</i>
@@ -137,18 +140,7 @@
                     <i class="fa-brands fa-shopify w"> Shopify</i>
                 </div>
             </div>
-            <div class="sponsors-sm">
-                <div class="sp-contain">
-                    <h5>Sponsors</h5>
-                    <i class="fa-brands fa-pinterest w"></i>
-                    <i class="fa-brands fa-wix w"></i>
-                    <i class="fa-brands fa-salesforce w"></i>
-                    <i class="fa-brands fa-shopify w"></i>
-                </div>
-            </div>
-
-        </div>
-    </footer> -->
+        </footer>
     <!-- FOOTER END -->
 
 </body>

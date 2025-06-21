@@ -7,18 +7,23 @@ body {
 
 nav {
   position: fixed;
-  background-image: url(black.jpg);
   z-index: 1;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #262626;
   height: 55px;
   width: 100%;
   top: 0;
+  transition: 0.5s;
 }
-nav .logo{
-width: 50px;
-display: none;
+.navScrollStyle {
+  /* background-image: url(black.jpg); */
+  background-color: #262626;
+  transition: 0.5s ease-in-out;
+}
+
+nav .logo {
+  width: 50px;
+  display: none;
 }
 
 nav .topnav {
@@ -60,7 +65,6 @@ nav .icon {
   color: #f00;
 }
 
-
 nav .nav-h1 {
   float: left;
   text-transform: uppercase;
@@ -81,7 +85,7 @@ nav .topnav li a::before {
   background: white;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform .4s linear;
+  transition: transform 0.4s linear;
 }
 
 nav .topnav li a:hover:before {
@@ -89,38 +93,43 @@ nav .topnav li a:hover:before {
   transform-origin: left;
 }
 
-.cart-shop{
+.cart-shop {
   position: relative;
 }
 
-.cart-shop:before{
-position: absolute;
-content:attr(data-count);
-width: 25px;
-height: 25px;
-font-size: 13px;
-line-height: 25px;
-border-radius: 15px;
-top: -9px;
-text-align: center;
-background-color: red;
-color: #fff;
-margin-left: 3px;
-opacity: 0;
+.cart-shop:before {
+  position: absolute;
+  content: attr(data-count);
+  width: 25px;
+  height: 25px;
+  font-size: 13px;
+  line-height: 25px;
+  border-radius: 15px;
+  top: -9px;
+  text-align: center;
+  background-color: red;
+  color: #fff;
+  margin-left: 3px;
+  opacity: 0;
 }
 
-.cart-shop.on:before{
+.cart-shop.on:before {
   opacity: 1;
 }
 
 .wrapper {
   height: 700px;
-  background-image:radial-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url(/img/freestocks-_3Q3tsJ01nc-unsplash.jpg);
+  background-image: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/img/freestocks-_3Q3tsJ01nc-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position:center;
-  position: relative;
+  background-position: center;
+  /* position: relative; */
   width: 100%;
+}
+
+.business-name {
+  display: none;
 }
 
 .banner {
@@ -137,8 +146,7 @@ opacity: 0;
   margin-bottom: 0px;
   font-size: 70px;
   font-weight: 900;
-  font-family: 'Poppins', sans-serif;
-
+  font-family: "Poppins", sans-serif;
 }
 
 .banner h2 span {
@@ -172,15 +180,20 @@ input {
   border: 2px solid #ddd;
   text-decoration: none;
 }
-.btn-shop:hover{
+
+.btn-shop:hover {
   border: none;
   background-color: #f00;
-
 }
 
 .service {
   position: relative;
-  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0px 2px 3px 0px #78787878; */
+  /* max-width: 1480px; */
+
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 .service p {
@@ -205,17 +218,22 @@ input {
 }
 
 .btn {
-  border-radius: 11px;
-  padding: 10px;
-  background-color: darkblue;
+  border-radius: 5px;
+  padding: 10px 16px;
+  background-color: blue;
   color: #fff;
   position: absolute;
-  bottom: 50px;
+  bottom: 30px;
   left: 140px;
   font-weight: bold;
+  transition: 0.3s;
 }
 
-
+.btn:hover {
+  background-color: rgba(2, 2, 82, 0.863);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
 .product {
   display: flex;
   flex-direction: column;
@@ -229,7 +247,9 @@ input {
   margin-top: 40px;
   font-size: 30px;
   padding-bottom: 10px;
-  border: 2px solid #262626;
+  background-color: #000;
+  color: #fff;
+  /* border: 2px solid #262626; */
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 20px;
@@ -247,7 +267,6 @@ input {
 .cards {
   margin: 10px;
   padding: 5px;
-
 }
 
 .products-img p {
@@ -263,7 +282,8 @@ input {
 
 .column-sample:hover {
   border-radius: 10px;
-  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2),0px 0px 30px 0px rgba(0, 0, 1, 0.2) ;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 30px 0px rgba(0, 0, 1, 0.2);
 }
 
 .animate {
@@ -302,23 +322,26 @@ input {
   padding-top: 10px;
 }
 
+footer {
+  background-color: #000;
+}
+
 .ft-wrapper {
   display: flex;
   flex-direction: row;
-  background: #000;
-  height: 300px;
+  align-items: center;
   padding-top: 20px;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 50px;
   position: relative;
 }
-
 
 footer h2 {
   color: #fff;
   letter-spacing: 10px;
   font-size: 35px;
   font-weight: 900;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 footer h2 span {
@@ -369,13 +392,12 @@ footer h2 span {
 }
 
 .sponsors {
+  text-align: center;
   color: #fff;
-  position: absolute;
-  bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .sponsors h5 {
-  text-align: center;
   font-size: 15px;
 }
 
@@ -385,74 +407,73 @@ footer h2 span {
   font-size: 20px;
 }
 
-@media (prefers-reduced-motion) 
- {
-  .hidden{
+@media (prefers-reduced-motion) {
+  .hidden {
     transition: none;
   }
 }
 
 @media (max-width: 1270px) {
-
-  .products-img{
+  .products-img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-}
-.products-img img{
-  width: 100%;
-    }  
+  }
 
-
+  .products-img img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1024px) {
-  .column-sample{
+  .column-sample {
     display: flex;
     flex-wrap: wrap;
   }
+
   .column-sample:hover {
     border-radius: 10px;
     /* width: 80%; */
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2),0px 0px 30px 0px rgba(0, 0, 1, 0.2) ;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2),
+      0px 0px 30px 0px rgba(0, 0, 1, 0.2);
   }
-  
-  .products-img{
+
+  .products-img {
     /* display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%; */
     margin: 0 auto;
+  }
+
+  .products-img img {
+    width: 100%;
+  }
+
+  .product h2 {
+    width: 40%;
+  }
 }
 
-.products-img img{
-  width: 100%;
-    }  
-    .product h2 {
-      width: 40%;
-    }
-    
+@media (max-width: 800px) {
+  .column-sample {
+    display: block;
+  }
 
+  .column-sample:hover {
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2),
+      0px 0px 30px 0px rgba(0, 0, 1, 0.2);
   }
-  @media (max-width:800px) {
-    .column-sample{
-      display: block;
-    }
-    .column-sample:hover {
-      border-radius: 10px;
-      width: 100%;
-      box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2),0px 0px 30px 0px rgba(0, 0, 1, 0.2) ;
-    }
-    .products-img{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      width: 100%;
-      margin: 0;
+
+  .products-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin: 0;
   }
-    
-    
-  }
+}
 
 @media screen and (max-width: 600px) {
-
   .topnav {
     display: none;
     height: 100%;
@@ -467,14 +488,13 @@ footer h2 span {
     padding-top: 60px;
   }
 
-  .topnav li  {
-    display: block ;
+  .topnav li {
+    display: block;
     text-align: left;
     font-size: 25px;
     padding: 8px 8px 8px 32px;
     line-height: 50px;
   }
-
 
   nav .icon {
     float: right;
@@ -495,7 +515,6 @@ footer h2 span {
     text-decoration: none;
   }
 
-
   nav {
     height: 50px !important;
     width: 100%;
@@ -506,31 +525,50 @@ footer h2 span {
   .nav-h1 {
     float: left;
     display: none;
-
   }
-  nav .logo{
+
+  nav .logo {
     display: block;
     float: left;
-    margin-left: 10px;
   }
 
-  .banner{
-    padding-top: 50px;
+  .banner {
+    padding-top: 200px;
   }
-  .banner h2 {
+
+  .business-name {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgb(2, 59, 75);
+    margin-top: 10px;
+  }
+
+  .business-name h2 {
     color: #fff;
     font-size: 40px;
     font-weight: 900;
-    font-family: 'Poppins', sans-serif;
-
+    font-family: "Poppins", sans-serif;
   }
+
+  .business-name h2 span {
+    color: #f00;
+  }
+
+  .banner h2 {
+    display: none;
+  }
+
   .banner h4 {
     text-align: left;
     padding-left: 8px;
   }
 
   .wrapper {
-    background-image: url(/img/freestocks-_3Q3tsJ01nc-unsplash.jpg);
+    background-image: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(/img/katsiaryna-endruszkiewicz-BteCp6aq4GI-unsplash.jpg);
+    background-position: center;
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -538,12 +576,13 @@ footer h2 span {
     position: relative;
     width: 100%;
   }
-  .btn-shop{
+
+  .btn-shop {
     margin-top: 10px;
     background-color: #f00;
     border: none;
   }
-  
+
   .search {
     display: none;
   }
@@ -576,45 +615,44 @@ footer h2 span {
     height: 350px;
   }
 
-
   .cards img {
     transition: none;
     width: 100%;
   }
-  
+
   .cards img:hover {
     transform: none;
-    width: 100%;  
+    width: 100%;
   }
 
   .service {
     box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
     height: 280px;
   }
-  
+
   .service p {
     font-weight: 600;
     margin-top: 10px;
     flex-wrap: wrap;
     padding: 8px;
   }
-  
+
   .section2 img {
-  display: none;
+    display: none;
   }
-  
+
   .section2 {
     display: block;
     position: relative;
   }
-  
+
   .service h4 {
     font-size: 25px;
     text-align: center;
     color: #f00;
     padding-top: 20px;
   }
-  
+
   .btn {
     border-radius: 11px;
     padding: 10px;
@@ -631,69 +669,68 @@ footer h2 span {
   .ft-wrapper {
     display: flex;
     flex-direction: column;
-   align-items: center;
+    align-items: center;
     background: #000;
     height: 250px;
     padding-top: 20px;
   }
-  
-  
+
   .ft-hd h2 {
     color: #fff;
     letter-spacing: 10px;
     font-size: 40px;
     font-weight: 900;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     text-align: center;
   }
-  
+
   footer h2 span {
     color: #f00;
   }
-  
+
   .links a {
     display: none;
   }
-  
- .s {
+
+  .s {
     padding-top: 0px;
     font-size: 30px;
     color: #fff;
     text-decoration: none;
     padding-left: 30px;
-  }  
-  
+  }
+
   .ft-hd h3 {
-  display: none;
+    display: none;
   }
-  
+
   .ft-hd h4 {
-  display: none;
+    display: none;
   }
-  
+
   .sponsors h5 {
     display: none;
   }
-  
+
   .sponsors .w {
     display: none;
   }
 
-  .note{
+  .note {
     text-align: left;
-    box-shadow:none;
+    box-shadow: none;
     margin: 5px;
     margin-bottom: 8px;
     height: 130px;
     border-radius: 8px;
     padding: 8px;
   }
-  .note mark{
-  background-color: #fff;
-  color: #f00;
-  font-size: 16px;
+
+  .note mark {
+    background-color: #fff;
+    color: #f00;
+    font-size: 16px;
   }
-  
 }
 
 @media screen and (max-width: 450px) {
@@ -703,16 +740,13 @@ footer h2 span {
 
   .topnav {
     padding-top: 15px;
-
   }
 
   .topnav li {
     font-size: 18px;
   }
 
-
   .wrapper {
     width: 100%;
   }
-
 }
