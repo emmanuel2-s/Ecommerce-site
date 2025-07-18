@@ -115,11 +115,12 @@ nav .topnav li a:hover:before {
 }
 
 .offer {
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 .offer h2 {
   text-align: center;
+  font-size: 50px;
 }
 
 .card1 h5,
@@ -128,21 +129,27 @@ nav .topnav li a:hover:before {
   justify-content: center;
   align-items: center;
   padding-right: 8px;
+  font-size: 22px;
 }
 
 .column-card {
-  display: flex;
-  margin-left: 10px;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 10px;
 }
 
 .card1 {
   margin: 5px;
-  width: 24%;
-  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
+  /* width: 24%; */
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
 .card1:hover {
-  box-shadow: 0px 6px 20px 0px rgba(7, 26, 197, 0.925);
+  box-shadow: 0px 4px 8px 0px rgba(7, 26, 197, 0.725);
+  transition: 0.5s ease-in-out;
+  transform: translateY(-7px);
 }
 
 .card1 .h {
@@ -152,7 +159,7 @@ nav .topnav li a:hover:before {
 }
 
 .card1 p {
-  padding-left: 5px;
+  padding: 14px;
 }
 
 .product {
@@ -180,6 +187,12 @@ nav .topnav li a:hover:before {
 .products-img {
   display: flex;
   justify-content: center;
+  margin-top: 10px;
+}
+
+.divider {
+  margin-top: 30px;
+  width: 85%;
 }
 
 .get-app img {
@@ -187,7 +200,8 @@ nav .topnav li a:hover:before {
 }
 
 .product h3 {
-  padding-left: 28px;
+  padding-top: 28px;
+  text-align: center;
   text-decoration: underline;
 }
 
@@ -375,14 +389,15 @@ footer h2 span {
   .column-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-left: 3px;
+    /* margin-left: 3px; */
   }
 
   .card1 {
-    margin: 5px 2px;
-    padding-bottom: 10px;
-    width: 97%;
-    box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
+    /* margin: 5px 2px; */
+    padding-bottom: 0px;
+    /* width: 97%; */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease-in-out;
   }
 }
 
@@ -452,13 +467,12 @@ footer h2 span {
 
   .offer h2 {
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     text-transform: capitalize;
   }
 
   .column-card {
     display: block;
-    margin-left: 3px;
   }
 
   .column-product {
@@ -472,9 +486,9 @@ footer h2 span {
   }
 
   .card1 {
-    margin: 2px;
+    /* margin: 2px; */
     padding-bottom: 10px;
-    width: 97%;
+    /* width: 97%; */
     box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
   }
 
@@ -487,7 +501,6 @@ footer h2 span {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 8px;
     font-weight: bold;
   }
 
@@ -503,7 +516,7 @@ footer h2 span {
   }
 
   .card1 p {
-    padding-left: 10px;
+    /* padding-left: 10px; */
     font-size: 17px;
     line-height: 20px;
   }
