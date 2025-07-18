@@ -105,6 +105,7 @@ function addItemsToLocalStorage(data) {
   const exist = items.find((item) => item.Name === data.Name);
   if (exist) {
     alert("item already added to the cart.!!");
+    return false;
   } else {
     // items = JSON.parse(localStorage.getItem('items'))
     items.push(data);
@@ -226,6 +227,7 @@ function sendMail(e) {
     })
     .catch((err) => console.log(err));
 }
+
 
 // function Vote() {
 //   let Age_vote = '';
